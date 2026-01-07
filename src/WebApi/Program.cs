@@ -1,4 +1,4 @@
-using Application;
+﻿using Application;
 using Infrastructure;
 using Microsoft.OpenApi.Models;
 
@@ -46,7 +46,7 @@ app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
   c.SwaggerEndpoint("/swagger/v1/swagger.json", "Product Management API V1");
-  c.RoutePrefix = "swagger";
+  c.RoutePrefix = string.Empty;
   c.DisplayRequestDuration();
   c.EnableTryItOutByDefault();
 });
